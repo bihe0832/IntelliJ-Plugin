@@ -1,0 +1,36 @@
+<idea-plugin>
+  <id>com.bihe0832.android.gradle</id>
+  <name>IntelliJDemo</name>
+  <version>1.0</version>
+  <vendor email="code@bihe0832.com" url="http://blog.bihe0832.com">zixie</vendor>
+
+  <description><![CDATA[
+      <DIV>这是一个Intelli插件的开发Demo，用于调通并可以验证Intelli插件的开发环境.<DIV> <br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <DIV>这是一个Intelli插件的开发Demo，用于调通并可以验证Intelli插件的开发环境.<DIV> <br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="131.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="com.bihe0832.android.gradle.Demo" class="com.bihe0832.android.gradle.DemoAction"
+        text="Show Zixie" description="this is a demo">
+      <add-to-group group-id="ToolsMenu" anchor="first" />
+    </action>
+  </actions>
+
+</idea-plugin>

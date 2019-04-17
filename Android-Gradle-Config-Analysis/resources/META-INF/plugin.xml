@@ -1,0 +1,36 @@
+<idea-plugin>
+  <id>com.bihe0832.android.gradle</id>
+  <name>GradleConfigAnalysis</name>
+  <version>1.0</version>
+  <vendor email="code@bihe0832.com" url="http://blog.bihe0832.com">zixie</vendor>
+
+  <description><![CDATA[
+      <DIV>一款检查使用Android Studio的工程的gradle相关配置的插件.<DIV> <br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <DIV>创建插件核心功能，支持检查grade的依赖冲突.支持检查grade的依赖冲突.支持检查grade的依赖冲突.<DIV>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="131.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="com.bihe0832.android.gradle.StartCheck" class="com.bihe0832.android.gradle.StartCheckAction"
+        text="Start Analysis" description="start to analysis the gradle config of this project">
+      <add-to-group group-id="ToolsMenu" anchor="first" />
+    </action>
+  </actions>
+
+</idea-plugin>
